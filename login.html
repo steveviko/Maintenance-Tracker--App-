@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Log In | HOME | Maintenance Tracker App</title>
+	<link rel="stylesheet" href="css/main.css" media="screen">
+	<link rel="stylesheet" href="css/forms.css" media="screen">
+	<link rel="stylesheet" href="css/register.css" media="screen">
+</head>
+<body>
+	<div id="wrapper">
+		<header id="main_header">
+			<div id="rightAlign">
+			<a href="register.html" class="button">Register</a> | <a href="login.html" class="button">Log In</a>
+	
+			</div>
+			<a href="index.html"><img src="images/LOGOlate.png" style="width:100px;"><h2 style="color:darkblue;">Maintenance Tracker App </h2></a>
+			
+		</header>
+		<div id="top_search">
+			<ul id="menu">
+				<li><a href="index.html" >Home</a></li>	
+				<li><a href="login.html" >My Account</a></li>
+				<li><a href="#" >Contact US</a></li>
+				<li><a href="#" >FAQS</a></li>
+			</ul>
+			<form name="input" action="" method="get" id="form">
+			
+				<input type="text" id="keywords" name="keywords" size="37" class="searchBox" placeholder="Search keywords">
+				
+				<input type="submit" value="Search" class="button" />
+			</form>
+		</div>
+		
+		<aside id="left_side">
+			<img src="images/loginbanner.png" />
+		</aside>
+		<section id="right_side">
+			<form id="generalform" class="container" method="POST" action="">
+				<h3>Log In</h3>
+				
+				<div class="field">
+					<label for="username">Username:</label>
+					<input type="text" class="input" id="username" name="username" maxlength="20"/>
+				</div>
+				<div class="field">
+					<label for="password">Password:</label>
+					<input type="password" class="input" id="password" name="password" maxlength="20"/>
+				</div>
+				<input type="submit" name="submit" id="submit" class="button" value="Submit"/>
+			</form>
+		</section>
+		<footer id="main_footer">    
+			<div class="">
+				  <p class="copyright">Copyright &copy; 2018. <a href="index.html">Maintenance Tracker App </a></p>
+				  <p class="developer">Developed By OS</p>
+			</div>
+	  </footer>
+	</div>
+</body>
+</html>

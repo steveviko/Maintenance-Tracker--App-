@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>	HOME | Maintenance Tracker App</title>
+
+<link rel="stylesheet" href="css/main.css" media="screen">
+<link rel="stylesheet" href="css/forms.css" media="screen">
+<link rel="stylesheet" href="css/register.css" media="screen">
+
+
+</head>
+<body>
+<div id="wrapper">
+		<header id="main_header">
+			<div id="rightAlign">
+			<a href="register.html" ><span class="button">Sign Up</span></a> | <a href="login.html"><span class="button">Log In</span></a>
+	
+			</div>
+			<a href="index.html"><img src="images/LOGOlate.png" style="width:100px;"><h2 style="color:darkblue;">Maintenance Tracker App </h2></a>
+			
+		</header>
+		<div id="top_search">
+			<ul id="menu">
+				<li><a href="index.html" >Home</a></li>	
+				<li><a href="login.html" >My Account</a></li>
+				<li><a href="#" >Contact US</a></li>
+				<li><a href="#" >FAQS</a></li>
+			</ul>
+			<form name="input" action="" method="get" id="form">
+			
+				<input type="text" id="keywords" name="keywords" size="37" class="searchBox" placeholder="Search keywords">
+				
+				<input type="submit" value="Search" class="button" />
+			</form>
+		</div>
+	
+		<aside id="left_side">
+			<img src="images/registerbanner.png" />
+		</aside>
+		<section id="right_side">
+			<form id="generalform" class="container" method="POST" action="">
+				<h3>Sign up</h3>
+				<div class="field">
+					<label for="firstname">First Name:</label>
+					<input type="text" class="input" id="firstname" name="firstname" maxlength="20"/>					
+				</div>
+				<div class="field">
+					<label for="lastname">Last Name:</label>
+					<input type="text" class="input" id="lastname" name="lastname" maxlength="20"/>					
+				</div>
+				<div class="field">
+					<label for="username">Username:</label>
+					<input type="text" class="input" id="username" name="username" maxlength="20"/>
+					<p class="hint">20 characters maximum (letters and numbers only)</p>
+				</div>
+				<div class="field">
+					<label for="email">Email:</label>
+					<input type="text" class="input" id="email" name="email" maxlength="80"/>
+				</div>
+				<div class="field">
+					<label for="password">Password:</label>
+					<input type="password" class="input" id="password" name="password" maxlength="20"/>
+					<p class="hint">20 characters maximum</p>
+				</div>
+				<div class="field">
+					<label for="password">I am:</label>
+					<select  class="input" name="sex"  id="sex" >
+						<option value=""> Select Sex:</option>
+						
+					<script type="text/javascript">
+					
+						var sex= new Array("","Female","Male");
+						for(i=1;i<=sex.length-1;i++)
+						{
+							document.write("<option value='"+i+"'>" + sex[i] + "</option>");
+						}	
+					</script>
+					</select>
+				</div>
+				<div class="field">
+					<label for="Birthday">Birthday:</label>
+					<input type="text" class="input" name="Birth"  id="Birth" maxlength="20" placeholder="Month/Day/Year">		
+					
+				</div>
+				<input type="submit" name="submit" id="submit" class="button" value="Submit"/>
+			</form>
+		</section>
+		
+		<footer id="main_footer">    
+			<div class="">
+				  <p class="copyright">Copyright &copy; 2018 <a href="index.html">Maintenance Tracker App </a></p>
+				  <p class="developer">Developed By OS</p>
+			</div>
+	  </footer>
+</div>
+</body>
+</html>
