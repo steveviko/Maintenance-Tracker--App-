@@ -2,18 +2,18 @@
 <html lang="en">
 <head>
 	<title>Log In | HOME | Maintenance Tracker App</title>
-	<link rel="stylesheet" href="css/main.css" media="screen">
-	<link rel="stylesheet" href="css/forms.css" media="screen">
-	<link rel="stylesheet" href="css/register.css" media="screen">
+	<link rel="stylesheet" href="static/css/main.css" media="screen">
+	<link rel="stylesheet" href="static/css/forms.css" media="screen">
+	<link rel="stylesheet" href="static/css/register.css" media="screen">
 </head>
 <body>
 	<div id="wrapper">
 		<header id="main_header">
 			<div id="rightAlign">
-			<a href="register.html" class="button">Register</a> | <a href="login.html" class="button">Log In</a>
+			<a href="register.html" class="button">Register</a> | <a href="/login.html" class="button">Log In</a>
 	
 			</div>
-			<a href="index.html"><img src="images/LOGOlate.png" style="width:100px;"><h2 style="color:darkblue;">Maintenance Tracker App </h2></a>
+			<a href="index.html"><img src="static/images/LOGOlate.png" style="width:100px;"><h2 style="color:darkblue;">Maintenance Tracker App </h2></a>
 			
 		</header>
 		<div id="top_search">
@@ -23,16 +23,16 @@
 				<li><a href="#" >Contact US</a></li>
 				<li><a href="#" >FAQS</a></li>
 			</ul>
-			<form name="input" action="search.php" method="get" id="form">
+			<form name="input" action="" method="get" id="form">
 			
-				<input type="text" id="keywords" name="keywords" size="37" class="searchBox" value="Search keywords">
+				<input type="text" id="keywords" name="keywords" size="37" class="searchBox" placeholder="Search keywords">
 				
 				<input type="submit" value="Search" class="button" />
 			</form>
 		</div>
 		
 		<aside id="left_side">
-			<img src="images/loginbanner.png" />
+			<img src="static/images/loginbanner.png" />
 		</aside>
 		<section id="right_side">
 			<form id="generalform" class="container" method="POST" action="">

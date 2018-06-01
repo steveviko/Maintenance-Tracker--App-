@@ -1,19 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>REGISTER | Maintenance Tracker App</title>
-	<link rel="stylesheet" href="css/main.css" media="screen">
-	<link rel="stylesheet" href="css/forms.css" media="screen">
-	<link rel="stylesheet" href="css/register.css" media="screen">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>	HOME | Maintenance Tracker App</title>
+
+<link rel="stylesheet" href="static/css/main.css" media="screen">
+<link rel="stylesheet" href="static/css/forms.css" media="screen">
+<link rel="stylesheet" href="static/css/register.css" media="screen">
+
+
 </head>
 <body>
-	<div id="wrapper">
+<div id="wrapper">
 		<header id="main_header">
 			<div id="rightAlign">
-			<a href="register.html" class="button">Register</a> | <a href="login.html" class="button">Log In</a>
+			<a href="register.html" ><span class="button">Sign Up</span></a> | <a href="login.html"><span class="button">Log In</span></a>
 	
 			</div>
-			<a href="index.html"><img src="images/LOGOlate.png" style="width:100px;"><h2 style="color:darkblue;">Maintenance Tracker App </h2></a>
+			<a href="index.html"><img src="static/images/LOGOlate.png" style="width:100px;"><h2 style="color:darkblue;">Maintenance Tracker App </h2></a>
 			
 		</header>
 		<div id="top_search">
@@ -32,12 +36,9 @@
 		</div>
 	
 		<aside id="left_side">
-			<img src="images/registerbanner.png" />
+			<img src="static/images/registerbanner.png" />
 		</aside>
 		<section id="right_side">
-		{% if message %}
-        <p>{{ message }}</p>
-    {% endif %}
 			<form id="generalform" class="container" method="POST" action="">
 				<h3>Sign up</h3>
 				<div class="field">
@@ -82,18 +83,16 @@
 					<input type="text" class="input" name="Birth"  id="Birth" maxlength="20" placeholder="Month/Day/Year">		
 					
 				</div>
-				
-
 				<input type="submit" name="submit" id="submit" class="button" value="Submit"/>
 			</form>
 		</section>
-			
+		
 		<footer id="main_footer">    
 			<div class="">
-				  <p class="copyright">Copyright &copy; 2018. <a href="index.html">Maintenance Tracker App </a></p>
+				  <p class="copyright">Copyright &copy; 2018 <a href="index.html">Maintenance Tracker App </a></p>
 				  <p class="developer">Developed By OS</p>
 			</div>
 	  </footer>
-	</div>
+</div>
 </body>
 </html>
